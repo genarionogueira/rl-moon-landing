@@ -1,10 +1,6 @@
 # LunarLander Double DQN (PyTorch)
 
-A clean, seminar-friendly implementation of a Double DQN agent for `Gymnasium`'s `LunarLander-v2`. It trains on CPU, logs learning progress, and renders videos of (a) the beginning of training and (b) the final trained agent.
-
-The learning approach and structure were inspired by the excellent reference implementation here: https://github.com/juliankappler/lunar-lander
-
----
+## A clean, seminar-friendly implementation of a Double DQN agent for `Gymnasium`'s `LunarLander-v2`. It trains on CPU, logs learning progress, and renders videos of (a) the beginning of training and (b) the final trained agent.
 
 ## What you get
 
