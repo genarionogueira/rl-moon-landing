@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "reinforcement-learning-demos"
+version = "0.1.0"
+description = "LunarLander Double DQN agent (PyTorch) with training and video render."
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gymnasium = { version = "^0.29.1", extras = ["classic-control", "box2d"] }
+numpy = "^1.26.0"
+imageio = "^2.33.0"
+imageio-ffmpeg = "^0.5.1"
+pygame = "^2.5.0"
+matplotlib = "^3.8.0"
+torch = "^2.3.0"
+
+[tool.poetry.scripts]
+train_lander = "train_agent:train"
+run_lander = "run_agent:run_video"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+

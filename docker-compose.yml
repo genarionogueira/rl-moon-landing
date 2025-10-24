@@ -1,0 +1,10 @@
+
+services:
+  gym-demo:
+    platform: linux/arm64
+    build: .
+    volumes:
+      - ./output:/app/output
+    environment:
+      - OUTPUT_DIR=/app/output
+    command: /bin/sh -lc "poetry run python train_agent.py && poetry run python run_agent.py"
