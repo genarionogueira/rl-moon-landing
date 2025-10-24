@@ -19,6 +19,23 @@ Artifacts written to `./output`:
 
 ---
 
+## Showcase (videos)
+
+Beginning of training (random/early behavior):
+
+<video src="output/lunarlander_beginning_training.mp4" width="640" controls></video>
+
+Trained agent (greedy policy):
+
+<video src="output/lunarlander_trained_agent.mp4" width="640" controls></video>
+
+If your browser doesn’t show inline players, open the files directly:
+
+- [lunarlander_beginning_training.mp4](output/lunarlander_beginning_training.mp4)
+- [lunarlander_trained_agent.mp4](output/lunarlander_trained_agent.mp4)
+
+---
+
 ## Quick start
 
 ### Run with Docker
@@ -94,10 +111,3 @@ Learning (high level):
 - Exploration: adjust epsilon decay/floor in `train_agent.py`.
 - Network size: change hidden sizes in `_mlp()` in `agent_class.py`.
 - Soft update rate: change `tau` in `AgentConfig`.
-
----
-
-## Acknowledgements
-
-- Inspired by: https://github.com/juliankappler/lunar-lander
-- `LunarLander-v2` environment from `Gymnasium`.
